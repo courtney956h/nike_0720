@@ -100,5 +100,19 @@ h1 img { width: 280px; }
 /* em 태그는 원래 이테리체, em은 인라인 성격이라 자체적으로 transform 안먹음
  즉, display:inline-block 적용 */
 
-.side .btnContents { position: absolute; bottom: 0; left: 0; 
-    color: #b9fb05; font-size: 60px; transform: skew(40deg); }
+.side .btnContents { position: absolute; bottom: 40px; left: 100px; 
+    color: #b9fb05; font-size: 60px; transform: skew(40deg);
+    width: 150px; height: 50px; }
+.side:hover .btnContents { left: 700px; }
+.side .btnContents i { position: absolute; bottom: 0; right: 0;
+    animation: arrowAni 1.5s infinite linear; }
+.side .btnContents i:nth-child(1) { animation-delay: 0s; }
+.side .btnContents i:nth-child(2) { animation-delay: 0.5s; }
+.side .btnContents i:nth-child(3) { animation-delay: 1s; }
+
+@keyframes arrowAni { 
+    0% { }
+    100% { opacity: 0; transform: scale(1.4); right: 100px; }
+ }
+
+
