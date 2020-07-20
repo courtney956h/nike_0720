@@ -100,4 +100,5 @@ h1 img { width: 280px; }
 /* em 태그는 원래 이테리체, em은 인라인 성격이라 자체적으로 transform 안먹음
  즉, display:inline-block 적용 */
 
-
+.side .btnContents { position: absolute; bottom: 0; left: 0; 
+    color: #b9fb05; font-size: 60px; transform: skew(40deg); }
